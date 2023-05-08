@@ -1,0 +1,1 @@
+# Nuxt.js-Optional-Framework-Authentication-with-Strapi
