@@ -73,6 +73,18 @@
       "relation": "oneToMany",
       "target": "api::blog.blog",
       "mappedBy": "user"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "user"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "users_permissions_users"
     }
   }
 }

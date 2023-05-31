@@ -13,13 +13,17 @@
   "pluginOptions": {},
   "attributes": {
     "blogtitle": {
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     },
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "user": {
       "type": "relation",
